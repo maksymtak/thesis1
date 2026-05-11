@@ -11,21 +11,7 @@ const icons = [ArrowBoxIconComponent, GithubIconComponent, TwitterIconComponent,
 @Component({
     selector: 'app-home',   
     imports: [RouterLink, ExternalLinkDirective, ...icons],
-    //templateUrl: './home.component.html',
-    template: '
-    
-    <section class="newShit">
-        <button class="sign-in" (click)="testingButton()"> Sign in </button>
-        <button class="sign-in" ><a href="google.com" ></a>Other button</button>
-        <a href="google.com"> go </a>
-
-    </section>
-
-    <h1>Count: {{testingCounter}} </h1>
-        
-    
-    ',
-    
+    templateUrl: './home.component.html',
     styleUrl: './home.component.scss',
     host: {
         'class': 'content'
