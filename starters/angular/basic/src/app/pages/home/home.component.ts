@@ -17,14 +17,14 @@ const icons = [ArrowBoxIconComponent, GithubIconComponent, TwitterIconComponent,
     <section class="newShit">
         <button class="sign-in" (click)="testingButton()"> Sign in </button>
         <button class="sign-in" ><a href="google.com" ></a>Other button</button>
-        <a href="google.com"> go out </a>
+        <a href="google.com"> go </a>
 
     </section>
 
     <h1>Count: {{testingCounter}} </h1>
         
     
-    '
+    ',
     
     styleUrl: './home.component.scss',
     host: {
@@ -35,6 +35,7 @@ export class HomeComponent {
     testingCounter = 0
 
     testingButton(): void{
-        this.testingCounter += 1
+        this.testingCounter = 1;
+        //this.testingCounter += 1
     }
 }
