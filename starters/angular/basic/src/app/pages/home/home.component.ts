@@ -21,7 +21,7 @@ export class HomeComponent {
     testingCounter = 0
 
     testingButton(): void{
-        this.testingCounter = 1;
+        this.testingCounter += 1;
         //this.testingCounter += 1
     }
 }
