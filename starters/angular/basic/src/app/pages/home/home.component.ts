@@ -18,5 +18,7 @@ const icons = [ArrowBoxIconComponent, GithubIconComponent, TwitterIconComponent,
     }
 })
 export class HomeComponent {
-
+    testingButton(): void{
+        
+    }
 }
